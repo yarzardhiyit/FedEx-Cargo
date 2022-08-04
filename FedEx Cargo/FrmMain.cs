@@ -34,7 +34,7 @@ namespace FedEx_Cargo
 
         private void aboutUSToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hello!");
+            MessageBox.Show("Hola!");
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
