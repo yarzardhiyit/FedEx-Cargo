@@ -2,4 +2,4 @@
 
 ### App Previews
 
-!(https://github.com/yarzardhiyit/yarzardhiyit/blob/main/spotrateinterface.png)
+![Preview - 1](https://github.com/yarzardhiyit/yarzardhiyit/blob/main/spotrateinterface.png)
