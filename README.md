@@ -1,5 +1,5 @@
 # FedEx Cargo
 
-###App Previews
+### App Previews
 
-[!](https://github.com/yarzardhiyit/yarzardhiyit/blob/main/spotrateinterface.png)
+!(https://github.com/yarzardhiyit/yarzardhiyit/blob/main/spotrateinterface.png)
