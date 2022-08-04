@@ -75,7 +75,7 @@ namespace FedEx_Cargo
                 WB = WB + FSI;
                 txtTotal.Text = WB.ToString();
             }
-            else if(WB == 1000 && WB > 1000)
+            else if(WB == 1000 || WB > 1000)
             {
                 WB = WB * 155 + WB * PS + HS;
                 FSI = (FSI / 100) * WB;
