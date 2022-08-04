@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAuth));
             this.txtPwd = new System.Windows.Forms.TextBox();
             this.lblPwd = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
@@ -70,6 +71,7 @@
             this.Controls.Add(this.lblPwd);
             this.Controls.Add(this.btnLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmAuth";
             this.Text = "Auth";
