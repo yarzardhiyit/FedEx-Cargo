@@ -56,5 +56,10 @@ namespace FedEx_Cargo
         {
             Application.Exit();
         }
+
+        private void FrmMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
