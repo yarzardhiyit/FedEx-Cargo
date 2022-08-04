@@ -34,7 +34,7 @@ namespace FedEx_Cargo
 
         private void aboutUSToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hola!");
+            MessageBox.Show("made by dhiyit.");
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
