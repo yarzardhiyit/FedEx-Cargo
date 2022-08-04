@@ -21,6 +21,9 @@ namespace FedEx_Cargo
         private void CargoCalc()
         {
             double WB;
+            double HS;
+            string sHS = txtHS.Text;
+            HS = double.Parse(sHS);
             int PS;
             string sPS = txtPS.Text;
             PS = int.Parse(sPS);
@@ -32,49 +35,49 @@ namespace FedEx_Cargo
 
             if(WB < 45)
             {
-                WB = WB * 205 + WB * PS;
+                WB = WB * 205 + WB * PS + HS;
                 FSI = (FSI / 100) * WB;
                 WB = WB + FSI;
                 txtTotal.Text = WB.ToString();
             }
             else if(WB < 71)
             {
-                WB = WB * 193 + WB * PS;
+                WB = WB * 193 + WB * PS + HS;
                 FSI = (FSI / 100) * WB;
                 WB = WB + FSI;
                 txtTotal.Text = WB.ToString();
             }
             else if(WB < 100)
             {
-                WB = WB * 188 + WB * PS;
+                WB = WB * 188 + WB * PS + HS;
                 FSI = (FSI / 100) * WB;
                 WB = WB + FSI;
                 txtTotal.Text = WB.ToString();
             }
             else if(WB < 300)
             {
-                WB = WB * 185 + WB * PS;
+                WB = WB * 185 + WB * PS + HS;
                 FSI = (FSI / 100) * WB;
                 WB = WB + FSI;
                 txtTotal.Text = WB.ToString();
             }
             else if(WB < 500)
             {
-                WB = WB * 182 + WB * PS;
+                WB = WB * 182 + WB * PS + HS;
                 FSI = (FSI / 100) * WB;
                 WB = WB + FSI;
                 txtTotal.Text = WB.ToString();
             }
             else if(WB < 1000)
             {
-                WB = WB * 167 + WB * PS;
+                WB = WB * 167 + WB * PS + HS;
                 FSI = (FSI / 100) * WB;
                 WB = WB + FSI;
                 txtTotal.Text = WB.ToString();
             }
             else if(WB == 1000 && WB > 1000)
             {
-                WB = WB * 155 + WB * PS;
+                WB = WB * 155 + WB * PS + HS;
                 FSI = (FSI / 100) * WB;
                 WB = WB + FSI;
                 txtTotal.Text = WB.ToString();
@@ -93,5 +96,6 @@ namespace FedEx_Cargo
         {
             CargoCalc();
         }
+
     }
 }

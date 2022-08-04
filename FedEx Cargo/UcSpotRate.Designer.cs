@@ -41,6 +41,9 @@
             this.txtFSI = new System.Windows.Forms.TextBox();
             this.lblFSI = new System.Windows.Forms.Label();
             this.btnDoJob = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtHS = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblSpotRate
@@ -143,7 +146,7 @@
             // 
             this.txtPS.Location = new System.Drawing.Point(259, 248);
             this.txtPS.Name = "txtPS";
-            this.txtPS.Size = new System.Drawing.Size(135, 22);
+            this.txtPS.Size = new System.Drawing.Size(110, 22);
             this.txtPS.TabIndex = 10;
             this.txtPS.Text = "16";
             // 
@@ -151,7 +154,7 @@
             // 
             this.txtFSI.Location = new System.Drawing.Point(523, 248);
             this.txtFSI.Name = "txtFSI";
-            this.txtFSI.Size = new System.Drawing.Size(135, 22);
+            this.txtFSI.Size = new System.Drawing.Size(110, 22);
             this.txtFSI.TabIndex = 11;
             this.txtFSI.Text = "32.5";
             // 
@@ -166,19 +169,48 @@
             // 
             // btnDoJob
             // 
-            this.btnDoJob.Location = new System.Drawing.Point(417, 297);
+            this.btnDoJob.Location = new System.Drawing.Point(416, 289);
             this.btnDoJob.Name = "btnDoJob";
-            this.btnDoJob.Size = new System.Drawing.Size(241, 41);
+            this.btnDoJob.Size = new System.Drawing.Size(242, 41);
             this.btnDoJob.TabIndex = 13;
             this.btnDoJob.Text = "Calculate";
             this.btnDoJob.UseVisualStyleBackColor = true;
             this.btnDoJob.Click += new System.EventHandler(this.btnDoJob_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(639, 251);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(19, 16);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "%";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(127, 289);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(126, 16);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Handling Surcharge";
+            // 
+            // txtHS
+            // 
+            this.txtHS.Location = new System.Drawing.Point(259, 286);
+            this.txtHS.Name = "txtHS";
+            this.txtHS.Size = new System.Drawing.Size(110, 22);
+            this.txtHS.TabIndex = 16;
+            this.txtHS.Text = "0";
             // 
             // UcSpotRate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Controls.Add(this.txtHS);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnDoJob);
             this.Controls.Add(this.lblFSI);
             this.Controls.Add(this.txtFSI);
@@ -214,5 +246,8 @@
         private System.Windows.Forms.TextBox txtFSI;
         private System.Windows.Forms.Label lblFSI;
         private System.Windows.Forms.Button btnDoJob;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtHS;
     }
 }
