@@ -17,7 +17,6 @@ namespace FedEx_Cargo
             InitializeComponent();
         }
 
-
         private void CargoCalc()
         {
             double WB;
@@ -33,55 +32,551 @@ namespace FedEx_Cargo
             string sWB = txtWeightBreak.Text;
             WB = double.Parse(sWB);
 
-            if(WB < 45)
+            switch (cbLane.SelectedIndex)
             {
-                WB = WB * 205 + WB * PS + HS;
-                FSI = (FSI / 100) * WB;
-                WB = WB + FSI;
-                txtTotal.Text = WB.ToString();
+                //USA
+                case 0:
+                    if (WB < 45)
+                    {
+                        WB = WB * 205 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 71)
+                    {
+                        WB = WB * 193 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 100)
+                    {
+                        WB = WB * 188 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 300)
+                    {
+                        WB = WB * 185 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 500)
+                    {
+                        WB = WB * 182 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 1000)
+                    {
+                        WB = WB * 167 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB == 1000 || WB > 1000)
+                    {
+                        WB = WB * 155 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }; break;
+
+                //Hong Kong
+                case 1:
+                    if (WB < 45)
+                    {
+                        WB = WB * 77 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 71)
+                    {
+                        WB = WB * 74 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 100)
+                    {
+                        WB = WB * 70 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 300)
+                    {
+                        WB = WB * 63 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 500)
+                    {
+                        WB = WB * 50 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 1000)
+                    {
+                        WB = WB * 47 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB == 1000 || WB > 1000)
+                    {
+                        WB = WB * 46 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }; break;
+
+                //Japan
+                case 2:
+                    if (WB < 45)
+                    {
+                        WB = WB * 132 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 71)
+                    {
+                        WB = WB * 130 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 100)
+                    {
+                        WB = WB * 128 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 300)
+                    {
+                        WB = WB * 105 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 500)
+                    {
+                        WB = WB * 96 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 1000)
+                    {
+                        WB = WB * 89 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB == 1000 || WB > 1000)
+                    {
+                        WB = WB * 86 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }; break;
+
+                //Malaysia
+                case 3:
+                    if (WB < 45)
+                    {
+                        WB = WB * 96 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 71)
+                    {
+                        WB = WB * 85 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 100)
+                    {
+                        WB = WB * 74 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 300)
+                    {
+                        WB = WB * 63 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 500)
+                    {
+                        WB = WB * 61 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 1000)
+                    {
+                        WB = WB * 60 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB == 1000 || WB > 1000)
+                    {
+                        WB = WB * 59 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }; break;
+
+                //Singapore
+                case 4:
+                    if (WB < 45)
+                    {
+                        WB = WB * 110 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 71)
+                    {
+                        WB = WB * 107 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 100)
+                    {
+                        WB = WB * 104 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 300)
+                    {
+                        WB = WB * 93 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 500)
+                    {
+                        WB = WB * 74 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 1000)
+                    {
+                        WB = WB * 73 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB == 1000 || WB > 1000)
+                    {
+                        WB = WB * 72 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }; break;
+
+                //Taiwan
+                case 5:
+                    if (WB < 45)
+                    {
+                        WB = WB * 90 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 71)
+                    {
+                        WB = WB * 86 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 100)
+                    {
+                        WB = WB * 82 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 300)
+                    {
+                        WB = WB * 68 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 500)
+                    {
+                        WB = WB * 54 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 1000)
+                    {
+                        WB = WB * 49 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB == 1000 || WB > 1000)
+                    {
+                        WB = WB * 48 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }; break;
+
+                //China
+                case 6:
+                    if (WB < 45)
+                    {
+                        WB = WB * 126 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 71)
+                    {
+                        WB = WB * 123 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 100)
+                    {
+                        WB = WB * 119 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 300)
+                    {
+                        WB = WB * 104 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 500)
+                    {
+                        WB = WB * 96 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 1000)
+                    {
+                        WB = WB * 89 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB == 1000 || WB > 1000)
+                    {
+                        WB = WB * 87 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }; break;
+
+                //Europe 1
+                case 7:
+                    if (WB < 45)
+                    {
+                        WB = WB * 213 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 71)
+                    {
+                        WB = WB * 181 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 100)
+                    {
+                        WB = WB * 176 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 300)
+                    {
+                        WB = WB * 167 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 500)
+                    {
+                        WB = WB * 165 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 1000)
+                    {
+                        WB = WB * 163 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB == 1000 || WB > 1000)
+                    {
+                        WB = WB * 162 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }; break;
+
+                //Europe 2
+                case 8:
+                    if (WB < 45)
+                    {
+                        WB = WB * 218 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 71)
+                    {
+                        WB = WB * 205 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 100)
+                    {
+                        WB = WB * 202 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 300)
+                    {
+                        WB = WB * 193 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 500)
+                    {
+                        WB = WB * 190 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 1000)
+                    {
+                        WB = WB * 189 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB == 1000 || WB > 1000)
+                    {
+                        WB = WB * 188 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }; break;
+
+                //Canada
+                case 9:
+                    if (WB < 45)
+                    {
+                        WB = WB * 220 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 71)
+                    {
+                        WB = WB * 219 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 100)
+                    {
+                        WB = WB * 218 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 300)
+                    {
+                        WB = WB * 217 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 500)
+                    {
+                        WB = WB * 215 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 1000)
+                    {
+                        WB = WB * 205 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB == 1000 || WB > 1000)
+                    {
+                        WB = WB * 200 + WB * PS + HS;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }; break;
             }
-            else if(WB < 71)
+
+            /*
+            int srPrice;
+            int sUSA sHK, sJP, sMY, sSSG, sTW, sCN, sEU1, sEU2, sCA;
+
+
+            switch (cbLane.SelectedIndex)
             {
-                WB = WB * 193 + WB * PS + HS;
-                FSI = (FSI / 100) * WB;
-                WB = WB + FSI;
-                txtTotal.Text = WB.ToString();
+                case 0: srPrice = sUSA; break;
+                case 1: srPrice = sHK; break;
+                case 2: srPrice = sJP; break;
+                case 3: srPrice = sMY; break;
+                case 4: srPrice = sSSG; break;
+                case 5: srPrice = sTW; break;
+                case 6: srPrice = sCN; break;
+                case 7: srPrice = sEU1; break;
+                case 8: srPrice = sEU2; break;
+                case 9: srPrice = sCA; break;
             }
-            else if(WB < 100)
-            {
-                WB = WB * 188 + WB * PS + HS;
-                FSI = (FSI / 100) * WB;
-                WB = WB + FSI;
-                txtTotal.Text = WB.ToString();
-            }
-            else if(WB < 300)
-            {
-                WB = WB * 185 + WB * PS + HS;
-                FSI = (FSI / 100) * WB;
-                WB = WB + FSI;
-                txtTotal.Text = WB.ToString();
-            }
-            else if(WB < 500)
-            {
-                WB = WB * 182 + WB * PS + HS;
-                FSI = (FSI / 100) * WB;
-                WB = WB + FSI;
-                txtTotal.Text = WB.ToString();
-            }
-            else if(WB < 1000)
-            {
-                WB = WB * 167 + WB * PS + HS;
-                FSI = (FSI / 100) * WB;
-                WB = WB + FSI;
-                txtTotal.Text = WB.ToString();
-            }
-            else if(WB == 1000 || WB > 1000)
-            {
-                WB = WB * 155 + WB * PS + HS;
-                FSI = (FSI / 100) * WB;
-                WB = WB + FSI;
-                txtTotal.Text = WB.ToString();
-            }
+            */
+
+
+
         }
 
         private void txtWeightBreak_KeyDown(object sender, KeyEventArgs e)
