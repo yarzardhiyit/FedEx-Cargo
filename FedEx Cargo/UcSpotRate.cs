@@ -579,6 +579,8 @@ namespace FedEx_Cargo
 
         }
 
+
+
         private void txtWeightBreak_KeyDown(object sender, KeyEventArgs e)
         {
             if(e.KeyCode == Keys.Enter)
@@ -591,6 +593,5 @@ namespace FedEx_Cargo
         {
             CargoCalc();
         }
-
     }
 }
