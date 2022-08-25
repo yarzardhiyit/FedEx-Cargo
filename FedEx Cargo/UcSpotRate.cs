@@ -31,6 +31,9 @@ namespace FedEx_Cargo
             FSI = double.Parse(sFSI);
             string sWB = txtWeightBreak.Text;
             WB = double.Parse(sWB);
+            double Red;
+            string sRed = txtRd.Text;
+            Red = double.Parse(sRed);
 
             switch (cbLane.SelectedIndex)
             {
@@ -38,49 +41,49 @@ namespace FedEx_Cargo
                 case 0:
                     if (WB < 45)
                     {
-                        WB = WB * 205 + WB * PS + HS;
+                        WB = WB * 205 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 71)
                     {
-                        WB = WB * 193 + WB * PS + HS;
+                        WB = WB * 193 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 100)
                     {
-                        WB = WB * 188 + WB * PS + HS;
+                        WB = WB * 188 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 300)
                     {
-                        WB = WB * 185 + WB * PS + HS;
+                        WB = WB * 185 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 500)
                     {
-                        WB = WB * 182 + WB * PS + HS;
+                        WB = WB * 182 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 1000)
                     {
-                        WB = WB * 167 + WB * PS + HS;
+                        WB = WB * 167 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB == 1000 || WB > 1000)
                     {
-                        WB = WB * 155 + WB * PS + HS;
+                        WB = WB * 155 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
@@ -90,49 +93,49 @@ namespace FedEx_Cargo
                 case 1:
                     if (WB < 45)
                     {
-                        WB = WB * 77 + WB * PS + HS;
+                        WB = WB * 77 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 71)
                     {
-                        WB = WB * 74 + WB * PS + HS;
+                        WB = WB * 74 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 100)
                     {
-                        WB = WB * 70 + WB * PS + HS;
+                        WB = WB * 70 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 300)
                     {
-                        WB = WB * 63 + WB * PS + HS;
+                        WB = WB * 63 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 500)
                     {
-                        WB = WB * 50 + WB * PS + HS;
+                        WB = WB * 50 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 1000)
                     {
-                        WB = WB * 47 + WB * PS + HS;
+                        WB = WB * 47 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB == 1000 || WB > 1000)
                     {
-                        WB = WB * 46 + WB * PS + HS;
+                        WB = WB * 46 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
@@ -142,49 +145,49 @@ namespace FedEx_Cargo
                 case 2:
                     if (WB < 45)
                     {
-                        WB = WB * 132 + WB * PS + HS;
+                        WB = WB * 132 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 71)
                     {
-                        WB = WB * 130 + WB * PS + HS;
+                        WB = WB * 130 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 100)
                     {
-                        WB = WB * 128 + WB * PS + HS;
+                        WB = WB * 128 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 300)
                     {
-                        WB = WB * 105 + WB * PS + HS;
+                        WB = WB * 105 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 500)
                     {
-                        WB = WB * 96 + WB * PS + HS;
+                        WB = WB * 96 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 1000)
                     {
-                        WB = WB * 89 + WB * PS + HS;
+                        WB = WB * 89 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB == 1000 || WB > 1000)
                     {
-                        WB = WB * 86 + WB * PS + HS;
+                        WB = WB * 86 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
@@ -194,49 +197,49 @@ namespace FedEx_Cargo
                 case 3:
                     if (WB < 45)
                     {
-                        WB = WB * 96 + WB * PS + HS;
+                        WB = WB * 96 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 71)
                     {
-                        WB = WB * 85 + WB * PS + HS;
+                        WB = WB * 85 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 100)
                     {
-                        WB = WB * 74 + WB * PS + HS;
+                        WB = WB * 74 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 300)
                     {
-                        WB = WB * 63 + WB * PS + HS;
+                        WB = WB * 63 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 500)
                     {
-                        WB = WB * 61 + WB * PS + HS;
+                        WB = WB * 61 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 1000)
                     {
-                        WB = WB * 60 + WB * PS + HS;
+                        WB = WB * 60 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB == 1000 || WB > 1000)
                     {
-                        WB = WB * 59 + WB * PS + HS;
+                        WB = WB * 59 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
@@ -246,49 +249,49 @@ namespace FedEx_Cargo
                 case 4:
                     if (WB < 45)
                     {
-                        WB = WB * 110 + WB * PS + HS;
+                        WB = WB * 110 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 71)
                     {
-                        WB = WB * 107 + WB * PS + HS;
+                        WB = WB * 107 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 100)
                     {
-                        WB = WB * 104 + WB * PS + HS;
+                        WB = WB * 104 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 300)
                     {
-                        WB = WB * 93 + WB * PS + HS;
+                        WB = WB * 93 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 500)
                     {
-                        WB = WB * 74 + WB * PS + HS;
+                        WB = WB * 74 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 1000)
                     {
-                        WB = WB * 73 + WB * PS + HS;
+                        WB = WB * 73 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB == 1000 || WB > 1000)
                     {
-                        WB = WB * 72 + WB * PS + HS;
+                        WB = WB * 72 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
@@ -298,49 +301,49 @@ namespace FedEx_Cargo
                 case 5:
                     if (WB < 45)
                     {
-                        WB = WB * 90 + WB * PS + HS;
+                        WB = WB * 90 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 71)
                     {
-                        WB = WB * 86 + WB * PS + HS;
+                        WB = WB * 86 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 100)
                     {
-                        WB = WB * 82 + WB * PS + HS;
+                        WB = WB * 82 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 300)
                     {
-                        WB = WB * 68 + WB * PS + HS;
+                        WB = WB * 68 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 500)
                     {
-                        WB = WB * 54 + WB * PS + HS;
+                        WB = WB * 54 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 1000)
                     {
-                        WB = WB * 49 + WB * PS + HS;
+                        WB = WB * 49 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB == 1000 || WB > 1000)
                     {
-                        WB = WB * 48 + WB * PS + HS;
+                        WB = WB * 48 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
@@ -350,49 +353,49 @@ namespace FedEx_Cargo
                 case 6:
                     if (WB < 45)
                     {
-                        WB = WB * 126 + WB * PS + HS;
+                        WB = WB * 126 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 71)
                     {
-                        WB = WB * 123 + WB * PS + HS;
+                        WB = WB * 123 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 100)
                     {
-                        WB = WB * 119 + WB * PS + HS;
+                        WB = WB * 119 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 300)
                     {
-                        WB = WB * 104 + WB * PS + HS;
+                        WB = WB * 104 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 500)
                     {
-                        WB = WB * 96 + WB * PS + HS;
+                        WB = WB * 96 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 1000)
                     {
-                        WB = WB * 89 + WB * PS + HS;
+                        WB = WB * 89 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB == 1000 || WB > 1000)
                     {
-                        WB = WB * 87 + WB * PS + HS;
+                        WB = WB * 87 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
@@ -402,49 +405,49 @@ namespace FedEx_Cargo
                 case 7:
                     if (WB < 45)
                     {
-                        WB = WB * 213 + WB * PS + HS;
+                        WB = WB * 213 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 71)
                     {
-                        WB = WB * 181 + WB * PS + HS;
+                        WB = WB * 181 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 100)
                     {
-                        WB = WB * 176 + WB * PS + HS;
+                        WB = WB * 176 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 300)
                     {
-                        WB = WB * 167 + WB * PS + HS;
+                        WB = WB * 167 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 500)
                     {
-                        WB = WB * 165 + WB * PS + HS;
+                        WB = WB * 165 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 1000)
                     {
-                        WB = WB * 163 + WB * PS + HS;
+                        WB = WB * 163 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB == 1000 || WB > 1000)
                     {
-                        WB = WB * 162 + WB * PS + HS;
+                        WB = WB * 162 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
@@ -454,49 +457,49 @@ namespace FedEx_Cargo
                 case 8:
                     if (WB < 45)
                     {
-                        WB = WB * 218 + WB * PS + HS;
+                        WB = WB * 218 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 71)
                     {
-                        WB = WB * 205 + WB * PS + HS;
+                        WB = WB * 205 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 100)
                     {
-                        WB = WB * 202 + WB * PS + HS;
+                        WB = WB * 202 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 300)
                     {
-                        WB = WB * 193 + WB * PS + HS;
+                        WB = WB * 193 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 500)
                     {
-                        WB = WB * 190 + WB * PS + HS;
+                        WB = WB * 190 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 1000)
                     {
-                        WB = WB * 189 + WB * PS + HS;
+                        WB = WB * 189 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB == 1000 || WB > 1000)
                     {
-                        WB = WB * 188 + WB * PS + HS;
+                        WB = WB * 188 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
@@ -506,49 +509,49 @@ namespace FedEx_Cargo
                 case 9:
                     if (WB < 45)
                     {
-                        WB = WB * 220 + WB * PS + HS;
+                        WB = WB * 220 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 71)
                     {
-                        WB = WB * 219 + WB * PS + HS;
+                        WB = WB * 219 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 100)
                     {
-                        WB = WB * 218 + WB * PS + HS;
+                        WB = WB * 218 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 300)
                     {
-                        WB = WB * 217 + WB * PS + HS;
+                        WB = WB * 217 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 500)
                     {
-                        WB = WB * 215 + WB * PS + HS;
+                        WB = WB * 215 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB < 1000)
                     {
-                        WB = WB * 205 + WB * PS + HS;
+                        WB = WB * 205 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }
                     else if (WB == 1000 || WB > 1000)
                     {
-                        WB = WB * 200 + WB * PS + HS;
+                        WB = WB * 200 + WB * PS + HS + Red;
                         FSI = (FSI / 100) * WB;
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
@@ -592,6 +595,11 @@ namespace FedEx_Cargo
         private void btnDoJob_Click(object sender, EventArgs e)
         {
             CargoCalc();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
