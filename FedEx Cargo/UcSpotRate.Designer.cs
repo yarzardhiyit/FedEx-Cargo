@@ -107,10 +107,10 @@
             "Canada QV: 18 July, 2022",
             "USA QV: 29 Aug, 2022",
             "Canada QV: 29 Aug, 2022"});
-            this.cbLane.Location = new System.Drawing.Point(486, 172);
+            this.cbLane.Location = new System.Drawing.Point(482, 172);
             this.cbLane.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbLane.Name = "cbLane";
-            this.cbLane.Size = new System.Drawing.Size(172, 24);
+            this.cbLane.Size = new System.Drawing.Size(179, 24);
             this.cbLane.TabIndex = 5;
             this.cbLane.Text = "USA QV: 18 July, 2022";
             // 
@@ -162,7 +162,7 @@
             // 
             // txtFSI
             // 
-            this.txtFSI.Location = new System.Drawing.Point(523, 249);
+            this.txtFSI.Location = new System.Drawing.Point(526, 249);
             this.txtFSI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFSI.Name = "txtFSI";
             this.txtFSI.Size = new System.Drawing.Size(111, 22);
@@ -172,7 +172,7 @@
             // lblFSI
             // 
             this.lblFSI.AutoSize = true;
-            this.lblFSI.Location = new System.Drawing.Point(413, 251);
+            this.lblFSI.Location = new System.Drawing.Point(409, 251);
             this.lblFSI.Name = "lblFSI";
             this.lblFSI.Size = new System.Drawing.Size(98, 16);
             this.lblFSI.TabIndex = 12;
@@ -180,10 +180,10 @@
             // 
             // btnDoJob
             // 
-            this.btnDoJob.Location = new System.Drawing.Point(415, 289);
+            this.btnDoJob.Location = new System.Drawing.Point(412, 289);
             this.btnDoJob.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDoJob.Name = "btnDoJob";
-            this.btnDoJob.Size = new System.Drawing.Size(243, 41);
+            this.btnDoJob.Size = new System.Drawing.Size(249, 41);
             this.btnDoJob.TabIndex = 13;
             this.btnDoJob.Text = "Calculate";
             this.btnDoJob.UseVisualStyleBackColor = true;
@@ -192,7 +192,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(639, 251);
+            this.label2.Location = new System.Drawing.Point(642, 251);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(19, 16);
             this.label2.TabIndex = 14;
@@ -219,7 +219,7 @@
             // lblRd
             // 
             this.lblRd.AutoSize = true;
-            this.lblRd.Location = new System.Drawing.Point(413, 214);
+            this.lblRd.Location = new System.Drawing.Point(409, 214);
             this.lblRd.Name = "lblRd";
             this.lblRd.Size = new System.Drawing.Size(102, 16);
             this.lblRd.TabIndex = 17;
@@ -228,7 +228,7 @@
             // 
             // txtRd
             // 
-            this.txtRd.Location = new System.Drawing.Point(523, 210);
+            this.txtRd.Location = new System.Drawing.Point(526, 210);
             this.txtRd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRd.Name = "txtRd";
             this.txtRd.Size = new System.Drawing.Size(135, 22);
@@ -238,7 +238,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(413, 175);
+            this.label4.Location = new System.Drawing.Point(409, 175);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 16);
             this.label4.TabIndex = 19;
