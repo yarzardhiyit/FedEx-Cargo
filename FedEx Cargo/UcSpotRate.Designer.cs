@@ -46,6 +46,7 @@
             this.txtHS = new System.Windows.Forms.TextBox();
             this.lblRd = new System.Windows.Forms.Label();
             this.txtRd = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblSpotRate
@@ -73,7 +74,7 @@
             // lblWeight
             // 
             this.lblWeight.AutoSize = true;
-            this.lblWeight.Location = new System.Drawing.Point(127, 214);
+            this.lblWeight.Location = new System.Drawing.Point(107, 214);
             this.lblWeight.Name = "lblWeight";
             this.lblWeight.Size = new System.Drawing.Size(117, 16);
             this.lblWeight.TabIndex = 3;
@@ -94,7 +95,7 @@
             // 
             this.cbLane.FormattingEnabled = true;
             this.cbLane.Items.AddRange(new object[] {
-            "USA",
+            "USA QV: 18 July, 2022",
             "Hong Kong",
             "Japan",
             "Malaysia",
@@ -103,13 +104,15 @@
             "China",
             "Europe 1",
             "Europe 2",
-            "Canada"});
-            this.cbLane.Location = new System.Drawing.Point(537, 172);
+            "Canada QV: 18 July, 2022",
+            "USA QV: 29 Aug, 2022",
+            "Canada QV: 29 Aug, 2022"});
+            this.cbLane.Location = new System.Drawing.Point(486, 172);
             this.cbLane.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbLane.Name = "cbLane";
-            this.cbLane.Size = new System.Drawing.Size(121, 24);
+            this.cbLane.Size = new System.Drawing.Size(172, 24);
             this.cbLane.TabIndex = 5;
-            this.cbLane.Text = "USA";
+            this.cbLane.Text = "USA QV: 18 July, 2022";
             // 
             // txtWeightBreak
             // 
@@ -123,25 +126,26 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(127, 175);
+            this.lblTotal.Location = new System.Drawing.Point(107, 164);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(229, 16);
+            this.lblTotal.Size = new System.Drawing.Size(132, 32);
             this.lblTotal.TabIndex = 7;
-            this.lblTotal.Text = "Total Estimated Freight Charge | THB";
+            this.lblTotal.Text = "Total Estimated \r\nFreight Charge | THB";
+            this.lblTotal.Click += new System.EventHandler(this.lblTotal_Click);
             // 
             // txtTotal
             // 
             this.txtTotal.Enabled = false;
-            this.txtTotal.Location = new System.Drawing.Point(373, 172);
+            this.txtTotal.Location = new System.Drawing.Point(259, 172);
             this.txtTotal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(157, 22);
+            this.txtTotal.Size = new System.Drawing.Size(111, 22);
             this.txtTotal.TabIndex = 8;
             // 
             // lblPS
             // 
             this.lblPS.AutoSize = true;
-            this.lblPS.Location = new System.Drawing.Point(127, 251);
+            this.lblPS.Location = new System.Drawing.Point(107, 251);
             this.lblPS.Name = "lblPS";
             this.lblPS.Size = new System.Drawing.Size(104, 16);
             this.lblPS.TabIndex = 9;
@@ -176,7 +180,7 @@
             // 
             // btnDoJob
             // 
-            this.btnDoJob.Location = new System.Drawing.Point(416, 289);
+            this.btnDoJob.Location = new System.Drawing.Point(415, 289);
             this.btnDoJob.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDoJob.Name = "btnDoJob";
             this.btnDoJob.Size = new System.Drawing.Size(243, 41);
@@ -197,7 +201,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(127, 289);
+            this.label3.Location = new System.Drawing.Point(107, 289);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(126, 16);
             this.label3.TabIndex = 15;
@@ -231,11 +235,21 @@
             this.txtRd.TabIndex = 18;
             this.txtRd.Text = "149.83";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(413, 175);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 16);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Select QV";
+            // 
             // UcSpotRate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtRd);
             this.Controls.Add(this.lblRd);
             this.Controls.Add(this.txtHS);
@@ -282,5 +296,6 @@
         private System.Windows.Forms.TextBox txtHS;
         private System.Windows.Forms.Label lblRd;
         private System.Windows.Forms.TextBox txtRd;
+        private System.Windows.Forms.Label label4;
     }
 }

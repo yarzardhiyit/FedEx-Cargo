@@ -37,7 +37,7 @@ namespace FedEx_Cargo
 
             switch (cbLane.SelectedIndex)
             {
-                //USA
+                //USA QV: 18 July, 2022
                 case 0:
                     if (WB < 45)
                     {
@@ -505,7 +505,7 @@ namespace FedEx_Cargo
                         txtTotal.Text = WB.ToString();
                     }; break;
 
-                //Canada
+                //Canada QV: 18 July, 2022
                 case 9:
                     if (WB < 45)
                     {
@@ -556,6 +556,110 @@ namespace FedEx_Cargo
                         WB = WB + FSI;
                         txtTotal.Text = WB.ToString();
                     }; break;
+
+                //USA QV: 29 Aug, 2022
+                case 10:
+                    if (WB < 45)
+                    {
+                        WB = WB * 229 + WB * PS + HS + Red;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 71)
+                    {
+                        WB = WB * 216 + WB * PS + HS + Red;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 100)
+                    {
+                        WB = WB * 210 + WB * PS + HS + Red;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 300)
+                    {
+                        WB = WB * 200 + WB * PS + HS + Red;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 500)
+                    {
+                        WB = WB * 195 + WB * PS + HS + Red;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 1000)
+                    {
+                        WB = WB * 190 + WB * PS + HS + Red;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB == 1000 || WB > 1000)
+                    {
+                        WB = WB * 183 + WB * PS + HS + Red;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }; break;
+
+                //Canada QV: 29 Aug, 2022
+                case 11:
+                    if (WB < 45)
+                    {
+                        WB = WB * 270 + WB * PS + HS + Red;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 71)
+                    {
+                        WB = WB * 269 + WB * PS + HS + Red;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 100)
+                    {
+                        WB = WB * 256 + WB * PS + HS + Red;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 300)
+                    {
+                        WB = WB * 255 + WB * PS + HS + Red;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 500)
+                    {
+                        WB = WB * 248 + WB * PS + HS + Red;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB < 1000)
+                    {
+                        WB = WB * 241 + WB * PS + HS + Red;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }
+                    else if (WB == 1000 || WB > 1000)
+                    {
+                        WB = WB * 235 + WB * PS + HS + Red;
+                        FSI = (FSI / 100) * WB;
+                        WB = WB + FSI;
+                        txtTotal.Text = WB.ToString();
+                    }; break;
             }
 
             /*
@@ -598,6 +702,11 @@ namespace FedEx_Cargo
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTotal_Click(object sender, EventArgs e)
         {
 
         }
