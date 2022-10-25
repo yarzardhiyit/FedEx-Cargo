@@ -35,7 +35,7 @@ namespace FedEx_Cargo
 
         private void aboutUSToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("App: Ceazar Cargo \nVersion: 1.0.0.19 \nDeveloped By: yarzardhiyit");
+            MessageBox.Show("App: Ceazar Cargo \nVersion: 1.0.0.20 \nDeveloped By: yarzardhiyit");
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
