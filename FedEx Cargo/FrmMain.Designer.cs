@@ -39,10 +39,12 @@
             this.fedExExpressToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dHLExpressToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uPSExpressSaverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.disputeInvoiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MainUI = new System.Windows.Forms.GroupBox();
             this.lblCopyRight = new System.Windows.Forms.Label();
+            this.FdxGround1 = new FedEx_Cargo.FdxGround();
             this.ucSpotRate1 = new FedEx_Cargo.UcSpotRate();
             this.ucDiam1 = new FedEx_Cargo.UcDiam();
             this.ucIntro1 = new FedEx_Cargo.UcIntro();
@@ -60,7 +62,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -70,7 +72,7 @@
             this.exitToolStripMenuItem,
             this.exitToolStripMenuItem1});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 26);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // exitToolStripMenuItem
@@ -94,9 +96,10 @@
             this.spotRatePricingToolStripMenuItem,
             this.fedExExpressToolStripMenuItem,
             this.dHLExpressToolStripMenuItem,
-            this.uPSExpressSaverToolStripMenuItem});
+            this.uPSExpressSaverToolStripMenuItem,
+            this.disputeInvoiceToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(58, 26);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
             this.toolsToolStripMenuItem.Text = "Tools";
             // 
             // diamensionToolStripMenuItem
@@ -131,12 +134,19 @@
             this.uPSExpressSaverToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
             this.uPSExpressSaverToolStripMenuItem.Text = "UPS Express Saver";
             // 
+            // disputeInvoiceToolStripMenuItem
+            // 
+            this.disputeInvoiceToolStripMenuItem.Name = "disputeInvoiceToolStripMenuItem";
+            this.disputeInvoiceToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
+            this.disputeInvoiceToolStripMenuItem.Text = "FDX Ground";
+            this.disputeInvoiceToolStripMenuItem.Click += new System.EventHandler(this.disputeInvoiceToolStripMenuItem_Click);
+            // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutUSToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 26);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // aboutUSToolStripMenuItem
@@ -152,6 +162,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MainUI.Controls.Add(this.lblCopyRight);
+            this.MainUI.Controls.Add(this.FdxGround1);
             this.MainUI.Controls.Add(this.ucSpotRate1);
             this.MainUI.Controls.Add(this.ucDiam1);
             this.MainUI.Controls.Add(this.ucIntro1);
@@ -173,10 +184,20 @@
             this.lblCopyRight.TabIndex = 2;
             this.lblCopyRight.Text = "Ceazar Calculator\r\n© 2022 Ceazar Millenium | All rights reserved.";
             // 
+            // FdxGround1
+            // 
+            this.FdxGround1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.FdxGround1.Location = new System.Drawing.Point(0, 6);
+            this.FdxGround1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.FdxGround1.Name = "FdxGround1";
+            this.FdxGround1.Size = new System.Drawing.Size(776, 392);
+            this.FdxGround1.TabIndex = 2;
+            // 
             // ucSpotRate1
             // 
             this.ucSpotRate1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ucSpotRate1.Location = new System.Drawing.Point(0, 15);
+            this.ucSpotRate1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucSpotRate1.Name = "ucSpotRate1";
             this.ucSpotRate1.Size = new System.Drawing.Size(774, 405);
             this.ucSpotRate1.TabIndex = 3;
@@ -245,6 +266,8 @@
         private System.Windows.Forms.Label lblCopyRight;
         private UcSpotRate ucSpotRate1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem disputeInvoiceToolStripMenuItem;
+        private FdxGround FdxGround1;
     }
 }
 
